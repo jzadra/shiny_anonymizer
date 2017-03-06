@@ -34,6 +34,7 @@ ui <- fluidPage(
            ),
            wellPanel(
              h3("Anonymizer Settings"),
+             p("Uses package", a(href = "https://cran.r-project.org/package=anonymizer", "anonymizer", target = "_blank"), "by Paul Hendricks"),
              selectInput("anon_algo", label = "Algorithm",
                          choices = c("md5", "sha1", "crc32", "sha256", "sha512",
                                           "xxhash32", "xxhash64", "murmur32"),
